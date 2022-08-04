@@ -13,7 +13,7 @@ board:
   sale_contact_cn: https://www.nuvoton.com
   sale_contact_global: https://www.nuvoton.com
   small_image: documents/images/small.png
-  vendor: Nuvoton technology corporation
+  vendor: Nuvoton
   version: v1.0
 chip:
   chip_name: NUC980DR61YC 
@@ -57,7 +57,7 @@ features_zh:
 - 硬體加解密引擎：RSA2048、AES256、ECC、SHA512 與 PRNG
 pkg_type: Board_Support_Packages
 pkg_vendor: Nuvoton
-pkg_version: 1.0.1
+pkg_version: 1.0.2
 template_projects:
 - builtin_files:
   - files_and_folders:

@@ -1,0 +1,14 @@
+LR_IROM1 0x0  {    ; load region size_region
+    ER_IROM1 0x0  {  ; load address = execution address
+        *.o (RESET, +First)
+        *(InRoot$$Sections)
+        .ANY (+RO)
+    }
+    RW_RAM1 +0  {  ; RW_RAM1 start address is after ER_ROM1
+        .ANY (+RW +ZI)
+    }
+    USB_NOCACHERAM 0x03E00000 0x00200000  {  ; RW data
+        *(.noncacheable)
+    }
+}
+
